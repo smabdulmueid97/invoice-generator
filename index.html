@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Invoice Generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>🧾 Simple Invoice Generator</h1>
+  <p>Fill in, preview live, print or save as PDF — no sign-up, everything stays in your browser.</p>
+  <div class="actions">
+    <button onclick="window.print()" class="btn primary">🖨️ Print / Save as PDF</button>
+    <button onclick="downloadHTML()" class="btn">⬇️ Download Invoice</button>
+    <button onclick="resetForm()" class="btn danger">↺ Reset</button>
+  </div>
+</header>
+
+<main class="layout">
+  <!-- FORM -->
+  <section class="panel form-panel">
+    <h2>Invoice details</h2>
+
+    <div class="grid2">
+      <label>Your Business / Name<input id="fromName" value="Your Business Name" oninput="render()"></label>
+      <label>Your Email<input id="fromEmail" value="hello@yourbusiness.com" oninput="render()"></label>
+      <label>Your Address<input id="fromAddress" value="123 Main Street, Dhaka" oninput="render()"></label>
+      <label>Your Phone<input id="fromPhone" value="+880 1XXX-XXXXXX" oninput="render()"></label>
+    </div>
+
+    <div class="grid2">
+      <label>Bill To<input id="toName" value="Client Name" oninput="render()"></label>
+      <label>Client Email<input id="toEmail" value="client@example.com" oninput="render()"></label>
+      <label>Client Address<input id="toAddress" value="Client Address" oninput="render()"></label>
+      <label>Client Phone<input id="toPhone" value="" oninput="render()"></label>
+    </div>
+
+    <div class="grid3">
+      <label>Invoice #<input id="invNo" value="INV-001" oninput="render()"></label>
+      <label>Invoice Date<input type="date" id="invDate" oninput="render()"></label>
+      <label>Due Date<input type="date" id="dueDate" oninput="render()"></label>
+    </div>
+
+    <div class="grid3">
+      <label>Currency
+        <select id="currency" onchange="render()">
+          <option value="BDT">BDT ৳</option>
+          <option value="USD" selected>USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="INR">INR ₹</option>
+        </select>
+      </label>
+      <label>Tax %<input type="number" id="taxRate" value="0" min="0" step="0.1" oninput="render()"></label>
+      <label>Discount %<input type="number" id="discountRate" value="0" min="0" step="0.1" oninput="render()"></label>
+    </div>
+
+    <h3>Items</h3>
+    <div id="items"></div>
+    <button onclick="addItem()" class="btn">+ Add Item</button>
+
+    <label>Notes<textarea id="notes" rows="3" oninput="render()">Thank you for your business!</textarea></label>
+    <label>Payment Details<input id="payment" value="Bank Transfer / bKash / Cash" oninput="render()"></label>
+  </section>
+
+  <!-- PREVIEW -->
+  <section class="panel preview-panel">
+    <h2>Live Preview</h2>
+    <div id="preview" class="invoice"></div>
+  </section>
+</main>
+
+<footer><p>Made with ❤️ — Free &amp; open source. Data never leaves your browser.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
