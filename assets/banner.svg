@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="invoice-generator — make an invoice in minutes, print it as a PDF">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#065F46"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D1FAE5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <circle cx="1050" cy="60" r="90" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="110" cy="300" r="70" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="980" cy="300" r="40" fill="#FFFFFF" opacity="0.10"/>
+  <text x="60" y="90" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="#FFFFFF">invoice-generator</text>
+  <text x="60" y="135" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#A7F3D0">Make an invoice in minutes. Print it as a PDF.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="60" y="170" width="200" height="54" rx="27" fill="#FFFFFF"/>
+    <text x="160" y="205" font-size="22" font-weight="bold" fill="#065F46" text-anchor="middle">No sign-up</text>
+    <rect x="280" y="170" width="200" height="54" rx="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="380" y="205" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">No server</text>
+    <rect x="500" y="170" width="220" height="54" rx="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="610" y="205" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">5 currencies</text>
+  </g>
+  <g>
+    <rect x="780" y="150" width="360" height="130" rx="16" fill="url(#card)"/>
+    <text x="810" y="190" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" fill="#065F46">INVOICE  #1042</text>
+    <text x="810" y="220" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#444444">3 line items  •  Tax 10%  •  Discount 5%</text>
+    <text x="810" y="252" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#065F46">Total:  $850.00</text>
+  </g>
+  <text x="60" y="320" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#A7F3D0">Line items  •  Tax and discount  •  BDT / USD / EUR / GBP / INR  •  Print or save as PDF</text>
+</svg>
