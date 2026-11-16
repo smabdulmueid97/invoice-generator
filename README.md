@@ -1,58 +1,75 @@
-<div align="center">
+<p align="center">
+  <img src="assets/banner.svg" alt="invoice-generator — make an invoice in minutes, print it as a PDF" width="100%" />
+</p>
 
-# Invoice Generator
+<p align="center">
+  <b>🚀 Try the live demo — <a href="https://smabdulmueid97.github.io/invoice-generator/">See it in action</a></b>
+</p>
 
-**A free invoice generator. No sign-up, no server.**
+<p align="center">
+  <a href="https://smabdulmueid97.github.io/invoice-generator/"><img alt="Live demo" src="https://img.shields.io/badge/demo-live-brightgreen?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/invoice-generator"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-HTML%20%2B%20CSS-yellow?style=flat-square" /></a>
+  <a href="https://github.com/smabdulmueid97/invoice-generator/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/smabdulmueid97/invoice-generator?style=flat-square" /></a>
+</p>
 
-Everything runs in your browser. Add line items, set tax and discount, pick a currency, print to PDF — done.
+<h1 align="center">invoice-generator</h1>
 
-[![License: MIT](https://img.shields.io/github/license/smabdulmueid97/invoice-generator?style=flat-square)](https://github.com/smabdulmueid97/invoice-generator/blob/main/LICENSE)
-[![Stars](https://img.shields.io/github/stars/smabdulmueid97/invoice-generator?style=flat-square)](https://github.com/smabdulmueid97/invoice-generator/stargazers)
-[![Last commit](https://img.shields.io/github/last-commit/smabdulmueid97/invoice-generator?style=flat-square)](https://github.com/smabdulmueid97/invoice-generator/commits/main)
+<p align="center">
+  A simple invoice generator — <b>no sign-up, no server</b>. Everything runs in your browser.<br />
+  Add line items, set tax and discount, pick a currency, and <b>print / save as PDF</b>.
+</p>
 
-**[▶ Try it in 10 seconds — live demo](https://smabdulmueid97.github.io/invoice-generator/)**
-
-No account. No data leaves your browser.
-
-</div>
+<p align="center">
+  <a href="https://smabdulmueid97.github.io/invoice-generator/">🔗 Live demo</a> •
+  <a href="#-what-it-does">Features</a> •
+  <a href="#-use-it">Use it</a> •
+  <a href="#-layout">Layout</a>
+</p>
 
 ---
 
-## Screenshots
+## ✨ What it does
 
-| Mobile | Desktop |
+| Feature | Detail |
 |---|---|
-| ![Mobile](screenshot-mobile.png) | ![Desktop](screenshot-desktop.png) |
+| Line items | Add / remove items — quantity × price auto-calculates |
+| Tax & discount | Tax % and discount % applied to the total |
+| Currencies | BDT ৳, USD $, EUR €, GBP £, INR ₹ |
+| Invoice details | Invoice number, invoice date & due date |
+| Preview | Live preview as you type |
+| Export | Print / Save as PDF (browser print), or download as HTML |
+| Reset | Clear the form and start over |
 
-> Tested at 360 / 768 / 1280 px — no horizontal overflow, no clipped buttons.
+```mermaid
+flowchart LR
+    A[Add line items] --> B[Set tax + discount]
+    B --> C[Pick a currency]
+    C --> D[Live preview]
+    D --> E[Print / Save as PDF]
+```
 
----
+## 🚀 Use it
 
-## Features
+Open the live demo, or open `index.html` in a browser — no build step, no install.
 
-- Add / remove line items — quantity & price auto-calculate
-- Tax % and discount %
-- Currency: BDT ৳, USD $, EUR €, GBP £, INR ₹
-- Invoice number, invoice date & due date
-- Live preview
-- Print / Save as PDF (browser print)
-- Download invoice as HTML
-- Reset form
+**[https://smabdulmueid97.github.io/invoice-generator/](https://smabdulmueid97.github.io/invoice-generator/)**
 
-## Use
+1. Fill in the invoice number, dates, and client details.
+2. Add line items — totals update automatically.
+3. Set tax % and discount % if you need them.
+4. Print / Save as PDF, or download the invoice as HTML.
 
-Open `index.html` in a browser, or visit the [live demo](https://smabdulmueid97.github.io/invoice-generator/).
+Nothing leaves your browser — there is no server and no account.
 
-## Files
+## 🗂️ Layout
 
-- `index.html` — page structure
-- `styles.css` — styling + print styles
-- `app.js` — invoice logic
-
-## Related repos
-
-- [freelancer-skills](https://github.com/smabdulmueid97/freelancer-skills) — the full money workflow as Claude Code skills: invoice, quote, expenses, payment follow-ups, monthly summary
+```
+index.html      # page structure
+styles.css      # styling + print styles
+app.js          # invoice logic
+README.md       # this file
+```
 
 ## License
 
-MIT
+No `LICENSE` file in this repo yet — add one to set the terms.
