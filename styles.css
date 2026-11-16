@@ -22,5 +22,12 @@ input,select,textarea{width:100%;padding:9px 10px;margin-top:5px;border:1px soli
 .totals{margin-left:auto;width:260px}.totals div{display:flex;justify-content:space-between;padding:5px 0;font-size:14px}
 .totals .grand{font-weight:800;font-size:18px;border-top:2px solid #0f172a;margin-top:6px;padding-top:8px}
 footer{text-align:center;color:#64748b;padding:20px;font-size:13px}
+.layout>*{min-width:0}
+.panel{min-width:0}
+.grid2>*,.grid3>*,.item-row>*{min-width:0}
+input,select,textarea{min-width:0}
+.invoice header{flex-wrap:wrap}
+.totals{width:100%;max-width:260px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.item-row{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.item-row{grid-template-columns:1fr}.invoice{padding:16px}.invoice table{font-size:13px}.invoice th,.invoice td{padding:6px 4px}.panel{padding:16px}.topbar h1{font-size:22px}.topbar{padding:20px 12px}.layout{padding:0 12px}}
 @media print{body{background:#fff}.topbar,.form-panel,footer{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}.panel{border:none}.preview-panel h2{display:none}}
